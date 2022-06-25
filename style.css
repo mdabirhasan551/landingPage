@@ -1,0 +1,193 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: f1fbff;
+}
+
+/*scrollbar css*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+/*scroll css ends*/
+
+.section-padding{
+    padding: 100px 0;
+}
+
+/*carousel css*/
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner img{
+    height: 1000px;
+    width: 100%;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+/*end of carousel*/
+
+
+/*navbar css*/
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-nav a:hover{
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;
+}
+
+.w-100{
+    height:100vh;
+}
+/*end of navbar*/
+
+
+/*about css*/
+#about{
+    margin-top: 25px;
+}
+.about-text{
+    margin-top:150px
+}
+/*end of about*/
+
+/*services css*/
+#services .container .row h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#services .container .row p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service.card-body{
+    font-size: 50px;
+}
+/*end of services*/
+
+/*portfolio css*/
+#portfolio .container .row h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#portfolio .container .row p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+/*end of portfolio*/
+
+/*team section css*/
+#team .container .row h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#team .container .row p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#team .row img{
+    height: 300px;
+    width: 400px;
+}
+
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.team .card:hover{
+    cursor: pointer;
+}
+/*end of team*/
+
+
+                            /*responsive css*/
+@media only screen and (min-width:760px) and (max-width:991px){
+    .carousel-caption{
+        bottom:370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
